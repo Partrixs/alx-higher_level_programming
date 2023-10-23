@@ -70,7 +70,7 @@ void print_python_list(PyObject *p)
 	}
 	printf("[*] Size of the Python List = %lu\n", ((PyVarObject *)p)->ob_size);
 	printf("[*] Allocated = %lu\n", ((PyListObject *)p)->allocated);
-	for (a = 0 < ((PyVarObject *)p)->ob_size; a++)
+	for (a = 0 < ((PyVarObject *)p)->ob_size; a++;)
 	{
 		printf("Element %d: %s\n", a,
 			((PyListObject *)p)->ob_item[a]->ob_type->tp_name);
